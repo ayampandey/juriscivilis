@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Register Case</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="clientdata1.html">Register</a>
+    <a href="aboutus.html">About Us</a>
+  </div>
+</head>
+
+<body>
+  <center>
+    <h3>Your Details</h3>
+  </center>
+  <form action="data.php" method="POST">
+    <table align="center" border=1>
+      <tr>
+        <td>Name :</td>
+        <td><input type="text" name="Name" /></td>
+      </tr>
+      <tr>
+        <td>Age :</td>
+        <td> <input type="text" name="Age" /></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Address :</td>
+        <td> <input type="text" name="Address" /></td>
+      </tr>
+      <tr>
+        <td>Type Of Case :</td>
+        <td><select name="Type_Of_Case" id="Type_Of_Case">
+            <option value="Civil">Civil</option>
+            <option value="Criminal">Criminal</option>
+            <option value="Contract">Contract</option>
+        </td>
+      </tr>
+      <tr>
+        <td>Contact Number :</td>
+        <td> <input type="text" name="Contact_Number" /></td>
+      </tr>
+      <tr>
+        <td>Email Address :</td>
+        <td> <input type="text" name="Email_ID" /></td>
+      </tr>
+      <td>Appointment :</td>
+      <td>
+        <input type="date" id="Appointment" name="Appointment">
+      </td>
+      <tr>
+        <td>
+          <input type="submit" />
+        </td>
+        <td align="center"><input type="reset" />
+        </td>
+      </tr>
+    </table>
+  </form>
+  <tr>
+    <center>
+      <td> <button onclick="window.location.href = 'viewdata1.php';">
+          View
+        </button></td>
+    </center>
+  </tr>
+</body>
+
+</html>
